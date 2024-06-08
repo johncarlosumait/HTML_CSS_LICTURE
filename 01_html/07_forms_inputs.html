@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form and inputs</title>
+  </head>
+  <body>
+    <h1>Forms and Inputs</h1>
+    <form action="process.php">
+      <div>
+        <label for="name">name</label><br />
+        <input type="text" name="name" id="name" value="Juan Dela Cruz" />
+      </div>
+      <p></p>
+      <!-- email -->
+      <div>
+        <label for="email">email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="jdelacruz@gmail.com"
+        />
+      </div>
+      <p></p>
+      <!-- textare -->
+      <div>
+        <label for="massages">massage</label><br />
+        <textarea name="massage" id="massage" cols="60" rows="5"></textarea>
+      </div>
+      <!-- dropdown -->
+      <div>
+        <label for="gender">gender</label>
+        <select name="gender" id="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="other">other</option>
+        </select>
+        <p></p>
+      </div>
+      <!-- number -->
+      <div>
+        <label for="age">age</label>
+        <input type="number" name="age" id="age" />
+      </div>
+
+      <!-- date -->
+      <div>
+        <label for="birthdate">birthdate</label>
+        <input type="date" name="bithdate" id="" />
+      </div>
+      <p></p>
+      <!-- radio button -->
+      <div>
+        <label for="membership">membership</label>
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="classic"
+        />Classic
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="silver"
+          checked
+        />Silver
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="gold"
+        />Gold
+      </div>
+      <p></p>
+      <!-- checkbox -->
+      <div>
+        <label for="hobbies">hobbies</label>
+        <input
+          type="checkbox"
+          name="hobbies"
+          id="hobbies"
+          value="Mountaineering"
+        />Mountaineering
+        <input
+          type="checkbox"
+          name="hobbies"
+          id="hobbies"
+          value="Cosplay"
+        />Cosplay
+        <input
+          type="checkbox"
+          name="hobbies"
+          id="hobbies"
+          value="photography"
+        />photography
+      </div>
+      <p></p>
+      <!-- password -->
+      <div>
+        <label for="password">password</label>
+        <input type="password" name="passwors" id="password" />
+      </div>
+      <p></p>
+      <!-- submit and reset -->
+      <div>
+        <input type="submit" value="Submit" />
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
